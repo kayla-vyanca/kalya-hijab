@@ -149,7 +149,7 @@ body {
 .contact-grid {
     display: flex; /* Mengubah grid menjadi flexbox */
 }
-    
+
 .contact-item {
     background-color: #800000;
     color: #fff;
@@ -395,10 +395,6 @@ form textarea:focus {
     .burgundy-bg {
         padding: 20px; 
     }
-    
-    .contact-container {
-        padding: 20px;
-    }
 
     .contact-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -538,8 +534,8 @@ form textarea:focus {
     height: auto;
   }
 
-  .contact-container {
-    padding: 0 16px;
+  .contact-grid {
+    max-width: 600px;
   }
 }
 
