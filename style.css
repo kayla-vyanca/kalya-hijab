@@ -1,0 +1,559 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Sticky */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+/* Warna & Animasi Tombol "Kontak" */
+.text-navbar {
+    color: #800000; /* Warna merah gelap */
+}
+
+.text-navbar:hover {
+    color: #000; /* Warna merah lebih terang */
+}
+
+/* Ikon Navbar */
+.navbar-icons i {
+    font-size: 20px;
+    color: black;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.navbar-icons i:hover {
+    color: #800000;
+}
+ /* Section Beranda */
+ .beranda {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Menyesuaikan tinggi layar */
+    background: url('assets/Jilbabu.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Overlay Gelap untuk kontras teks */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.233); /* Efek transparan gelap */
+}
+
+/* Kontainer teks */
+.beranda-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+.footer {
+    margin-top: auto;
+    background-color: #800000; 
+    color: #fff;
+    padding: 20px 0;
+}
+
+.burgundy-bg {
+    background-color: #800000;
+    color: #fff;
+}
+
+.burgundy-bg-navbar {
+    background-color: #800000;
+    color: #fff;
+}
+
+.burgundy-bg-navbar:hover {
+    background-color: #000;
+}
+
+.cover {
+    width:100%;
+    height:100%;
+}
+    
+.mark {
+    color:#800000;
+}
+
+.mark-one {
+    color: #800000;
+}
+    
+.grid-gambar {
+    border-radius:8px;
+}
+    
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+.background-image {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:120px;
+}
+    
+.center-text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:120px;
+}
+
+
+.custom-button {
+    width: 25%;
+}
+
+    
+.testimonials {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    
+    
+.contact-grid {
+    display: flex; /* Mengubah grid menjadi flexbox */
+}
+    
+.contact-item {
+    background-color: #800000;
+    color: #fff;
+    width: 400px; /* Lebar tetap */
+    height: 200px; /* Tinggi tetap agar semua item seragam */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+    
+.image-container {
+    margin-top:200px;
+    margin-left:20px;
+}
+
+ /* Container utama */
+ .container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Kolom kiri (Teks & Background Merah) */
+.left-section {
+    background-color: #800000; /* Warna merah gelap (burgundy) */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid #800000; /* Border luar berwarna burgundy */
+    border-radius: 10px 0 0 10px; /* Membuat sudut lebih membulat */
+    overflow: hidden; /* Agar sudut border rapi */
+}
+
+/* Kolom kanan (Formulir) */
+.right-section {
+    background-color: white;
+    padding: 50px;
+    border: 2px solid #800000; /* Border luar berwarna burgundy */
+    border-radius: 0 10px 10px 0; /* Membuat sudut lebih membulat */
+    overflow: hidden; /* Agar sudut border rapi */
+}
+
+/* Tombol Kirim Pesan */
+.custom-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #800000;
+    color: #fff;
+}
+
+.custom-tombol {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-tombol:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-tombol1 {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-tombol1:hover {
+    background-color: white;
+    color: #000;
+}
+
+.custom-tombol2 {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-tombol2:hover {
+    background-color: #800000;
+    color: #fff;
+}
+
+/* Container utama */
+.grid-gambar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #800000; /* Warna Burgundy */
+    color: white;
+    border-radius: 10px;
+}
+
+/* Kolom kiri (Gambar) */
+.left-section-img {
+    width: 30%;
+}
+
+.left-section img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Memastikan gambar menyesuaikan container */
+}
+
+/* Kolom kanan (Teks) */
+.right-section-img {
+    width: 70%;
+    padding: 90px;
+    text-align: left;
+}
+
+/* Tombol */
+.custom-button-img {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-button-img:hover {
+    background-color: #333;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .background-image {
+        max-width:100%;
+        height: 100%;
+    }
+    
+    .background-container {
+     position: relative;
+     width: 100%;
+     height: 360px;
+     overflow: hidden;
+    }
+
+
+    .contact-grid {
+        grid-template-rows: repeat;
+    }
+    
+    .custom-button {
+        width:50%;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 375px) {
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+    
+    .burgundy-bg {
+        padding: 20px; 
+    }
+    
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .custom-button {
+        width:100%; 
+        
+    }
+    
+    .container-wrapper {
+        padding: 0 20px; 
+    }
+    
+    .container.mb-5 {
+        padding: 20px; 
+    }
+
+    .col-6.center-text {
+        text-align: center; 
+    }
+
+    .col-6.mt-5.gap-2.d-flex.align-items-center {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .image-container {
+        margin-top: 10px; 
+    }
+    
+    .row.burgundy-bg.grid-gambar {
+        flex-direction: column; 
+    }
+
+    .col-6.d-flex.align-items-center.px-0.py-0 {
+        height: auto; 
+    }
+
+    .background-container {
+        height: 200px; 
+    }
+
+    .col-6.center-text-about.p-5 {
+        text-align: justify;
+    }
+
+    .custom-button {
+        width: 100%;
+    }
+
+}
+
+.custom-tombol:focus,
+.custom-tombol:hover,
+.custom-tombol:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.maroon-wrap {
+  background-color: maroon;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Buat dua kolom utama menjadi vertikal */
+  .container .row {
+    flex-direction: column;
+  }
+
+  /* Buat heading di tengah */
+  .center-text {
+    text-align: center !important;
+  }
+
+  /* Buat testimonial mengambil full width */
+  .col-12 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+   .col-6 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Pastikan margin antar testimonial cukup */
+  .mt-5, .mb-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Tambahan: hapus padding yang tidak perlu */
+  .testimonials .container {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-about {
+    text-align: center;
+  }
+
+  .col-md-6 .btn {
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+
+.contact-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between; /* default untuk layar besar */
+}
+
+/* Responsive: Stack dan pusatkan isi di tengah */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;        /* untuk memusatkan isi horizontal */
+    justify-content: center;    /* opsional, kalau ingin vertical center juga */
+    text-align: center;         /* agar teks di dalam ikut rata tengah */
+  }
+}
+
+.container-wrapper {
+  overflow: hidden; /* agar elemen dalamnya ikut membentuk radius */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .left-section {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .right-section {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.footer {
+  background-color: #800000; /* optional, bisa diganti sesuai desainmu */
+  padding: 2rem 0;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer i {
+  font-size: 1.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+  }
+
+  .footer .col-4,
+  .footer .col-3,
+  .footer .col-2 {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+    text-align: left; /* penting: pastikan tetap rata kiri */
+  }
+
+  .footer .text-justify {
+    text-align: left !important; /* override default justify/center */
+  }
+}
+
+
