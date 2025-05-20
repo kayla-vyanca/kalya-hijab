@@ -1,11 +1,9 @@
-
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif !important;
 }
-
-/* Navbar Sticky */
 
 .navbar {
     position: sticky;
@@ -17,16 +15,18 @@ body {
     padding: 10px 0;
 }
 
-/* Warna & Animasi Tombol "Kontak" */
 .text-navbar {
-    color: #800000; /* Warna merah gelap */
+    color: #800000; 
 }
 
 .text-navbar:hover {
-    color: #000; /* Warna merah lebih terang */
+    color: #000; 
 }
 
-/* Ikon Navbar */
+.nav-link:hover {
+  color: #800000 !important;
+}
+
 .navbar-icons i {
     font-size: 20px;
     color: black;
@@ -37,11 +37,11 @@ body {
 .navbar-icons i:hover {
     color: #800000;
 }
- /* Section Beranda */
+
  .beranda {
     position: relative;
     width: 100%;
-    height: 90vh; /* Menyesuaikan tinggi layar */
+    height: 90vh;
     background: url('assets/Jilbabu.jpeg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -50,17 +50,15 @@ body {
     color: white;
 }
 
-/* Overlay Gelap untuk kontras teks */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.233); /* Efek transparan gelap */
+    background: rgba(0, 0, 0, 0.233);
 }
 
-/* Kontainer teks */
 .beranda-content {
     position: relative;
     z-index: 2;
@@ -79,15 +77,6 @@ body {
 .burgundy-bg {
     background-color: #800000;
     color: #fff;
-}
-
-.burgundy-bg-navbar {
-    background-color: #800000;
-    color: #fff;
-}
-
-.burgundy-bg-navbar:hover {
-    background-color: #000;
 }
 
 .cover {
@@ -111,8 +100,7 @@ body {
     position: relative;
     width: 100%;
     height: 500px;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 .background-image {
@@ -145,7 +133,6 @@ body {
     width: 25%;
 }
 
-    
 .testimonials {
     max-width: 600px;
     margin: 0 auto;
@@ -158,7 +145,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-    
     
 .contact-grid {
     display: flex; /* Mengubah grid menjadi flexbox */
@@ -188,7 +174,6 @@ body {
     margin-left:20px;
 }
 
- /* Container utama */
  .container-wrapper {
     display: flex;
     align-items: center;
@@ -196,9 +181,8 @@ body {
     padding: 50px;
 }
 
-/* Kolom kiri (Teks & Background Merah) */
 .left-section {
-    background-color: #800000; /* Warna merah gelap (burgundy) */
+    background-color: #800000;
     color: white;
     display: flex;
     align-items: center;
@@ -206,21 +190,19 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 50px;
-    border: 2px solid #800000; /* Border luar berwarna burgundy */
-    border-radius: 10px 0 0 10px; /* Membuat sudut lebih membulat */
-    overflow: hidden; /* Agar sudut border rapi */
+    border: 2px solid #800000; 
+    border-radius: 10px 0 0 10px; 
+    overflow: hidden;
 }
 
-/* Kolom kanan (Formulir) */
 .right-section {
     background-color: white;
     padding: 50px;
-    border: 2px solid #800000; /* Border luar berwarna burgundy */
-    border-radius: 0 10px 10px 0; /* Membuat sudut lebih membulat */
-    overflow: hidden; /* Agar sudut border rapi */
+    border: 2px solid #800000; 
+    border-radius: 0 10px 10px 0; 
+    overflow: hidden; 
 }
 
-/* Tombol Kirim Pesan */
 .custom-button {
     background-color: black;
     color: white;
@@ -281,17 +263,15 @@ body {
     color: #fff;
 }
 
-/* Container utama */
 .grid-gambar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #800000; /* Warna Burgundy */
+    background-color: #800000; 
     color: white;
     border-radius: 10px;
 }
 
-/* Kolom kiri (Gambar) */
 .left-section-img {
     width: 30%;
 }
@@ -299,17 +279,15 @@ body {
 .left-section img {
     width: 50%;
     height: 50%;
-    object-fit: cover; /* Memastikan gambar menyesuaikan container */
+    object-fit: cover;
 }
 
-/* Kolom kanan (Teks) */
 .right-section-img {
     width: 70%;
     padding: 90px;
     text-align: left;
 }
 
-/* Tombol */
 .custom-button-img {
     background-color: black;
     color: white;
@@ -324,6 +302,55 @@ body {
     background-color: #333;
 }
 
+.custom-tombol:focus,
+.custom-tombol:hover,
+.custom-tombol:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.maroon-wrap {
+  background-color: maroon;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between; /* default untuk layar besar */
+}
+
+.container-wrapper {
+  overflow: hidden; /* agar elemen dalamnya ikut membentuk radius */
+  padding: 20px;
+}
+
+.footer {
+  background-color: #800000; /* optional, bisa diganti sesuai desainmu */
+  padding: 2rem 0;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer i {
+  font-size: 1.25rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #800000 !important;
+  box-shadow: 0 0 0 0.2rem rgba(128, 0, 0, 0.25) !important;
+  outline: none !important;
+}
+
+.form-control:focus {
+  border-color: #800000 !important;
+  box-shadow: 0 0 0 0.2rem rgba(128, 0, 0, 0.25) !important;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .navbar-toggler {
@@ -346,16 +373,13 @@ body {
      overflow: hidden;
     }
 
-
     .contact-grid {
         grid-template-rows: repeat;
     }
     
     .custom-button {
-        width:50%;
-        
-    }
-    
+        width:50%;   
+    } 
 }
 
 
@@ -425,35 +449,13 @@ body {
     .custom-button {
         width: 100%;
     }
-
 }
 
-.custom-tombol:focus,
-.custom-tombol:hover,
-.custom-tombol:active {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-.maroon-wrap {
-  background-color: maroon;
-  color: white;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  /* Buat dua kolom utama menjadi vertikal */
-  .container .row {
-    flex-direction: column;
-  }
-
-  /* Buat heading di tengah */
+@media (max-width: 992px) {
   .center-text {
     text-align: center !important;
   }
 
-  /* Buat testimonial mengambil full width */
   .col-12 {
     width: 100%;
     padding-left: 15px;
@@ -465,14 +467,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  /* Pastikan margin antar testimonial cukup */
-  .mt-5, .mb-5 {
-    margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-  }
-
-  /* Tambahan: hapus padding yang tidak perlu */
   .testimonials .container {
     padding: 0 !important;
   }
@@ -487,30 +481,14 @@ body {
     margin: 0 auto;
     display: inline-block;
   }
-}
 
-.contact-grid {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: space-between; /* default untuk layar besar */
-}
-
-/* Responsive: Stack dan pusatkan isi di tengah */
-@media (max-width: 768px) {
   .contact-grid {
     flex-direction: column;
     align-items: center;        /* untuk memusatkan isi horizontal */
     justify-content: center;    /* opsional, kalau ingin vertical center juga */
     text-align: center;         /* agar teks di dalam ikut rata tengah */
   }
-}
 
-.container-wrapper {
-  overflow: hidden; /* agar elemen dalamnya ikut membentuk radius */
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
   .row {
     flex-direction: column;
   }
@@ -522,23 +500,7 @@ body {
   .right-section {
     border-radius: 0 0 10px 10px;
   }
-}
 
-.footer {
-  background-color: #800000; /* optional, bisa diganti sesuai desainmu */
-  padding: 2rem 0;
-}
-
-.footer p {
-  margin-bottom: 0.5rem;
-}
-
-.footer i {
-  font-size: 1.25rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
   .footer .row {
     flex-direction: column;
   }
@@ -554,6 +516,28 @@ body {
   .footer .text-justify {
     text-align: left !important; /* override default justify/center */
   }
+
+   #tentang-kami .row {
+    flex-direction: column; /* stack vertikal */
+    margin: 5px;
+    margin: 5px;
+  }
+
+  #tentang-kami .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #tentang-kami .text-about {
+    text-align: center; /* opsional: tengah di layar kecil */
+  }
+
+  #tentang-kami img {
+    width: 100% !important; /* gambar mengikuti lebar kolom */
+    max-width: 100%;
+    height: auto;
+  }
 }
+
 
 
