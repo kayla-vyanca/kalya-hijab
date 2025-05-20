@@ -537,6 +537,10 @@ form textarea:focus {
     max-width: 100%;
     height: auto;
   }
+
+  .contact-container {
+    padding: 0 16px;
+  }
 }
 
 
